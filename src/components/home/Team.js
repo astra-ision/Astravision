@@ -29,7 +29,7 @@ export default function Team() {
               <div className="aspect-square relative">
                 <img
                   src="/abhishek.jpeg"
-                  alt="Abhishek Meena - Founder & CEO"
+                  alt="Abhishek Meena - Founder"
                   className="w-full h-full object-cover"
                 />
               </div>
