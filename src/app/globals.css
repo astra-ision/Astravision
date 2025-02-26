@@ -55,16 +55,16 @@
   }
 
   .btn-primary {
-    @apply bg-[#5648D1] text-white px-8 py-4 rounded-full 
+    @apply w-full sm:w-auto bg-[#5648D1] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full 
            hover:bg-[#4537c9] transition-all duration-300 
            shadow-lg hover:shadow-xl transform hover:-translate-y-0.5
-           font-semibold text-lg;
+           text-base sm:text-lg font-semibold;
   }
   
   .btn-secondary {
-    @apply border-2 border-[#5648D1] text-[#5648D1] px-8 py-4 rounded-full 
+    @apply w-full sm:w-auto border-2 border-[#5648D1] text-[#5648D1] px-6 sm:px-8 py-3 sm:py-4 rounded-full 
            hover:bg-[#5648D1] hover:text-white transition-all duration-300
-           transform hover:-translate-y-0.5 font-semibold text-lg;
+           transform hover:-translate-y-0.5 text-base sm:text-lg font-semibold;
   }
 
   .nav-link {
@@ -72,11 +72,11 @@
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl font-bold mb-6 text-[#1a1a1a] leading-tight;
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[#1a1a1a] leading-tight;
   }
 
   .section-subtitle {
-    @apply text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed;
+    @apply text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4;
   }
 
   .card {
@@ -127,6 +127,14 @@
 
   .list-custom {
     @apply list-disc pl-6 space-y-2 text-gray-600;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply py-12 sm:py-16 md:py-20 lg:py-32;
   }
 }
 
@@ -223,3 +231,21 @@ html {
 /* *{
   outline: 2px solid red;
 } */
+
+/* Better spacing for mobile */
+.section-spacing-mobile {
+  @apply py-8 sm:py-12;
+}
+
+/* Improved touch targets for mobile */
+@media (max-width: 640px) {
+  button, 
+  a {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  input,
+  textarea {
+    @apply text-base;
+  }
+}

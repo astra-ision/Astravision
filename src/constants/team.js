@@ -12,8 +12,8 @@ export const teamMembers = [
       'Digital Transformation'
     ],
     social: {
-      linkedin: 'https://linkedin.com/in/abhishek-meena',
-      twitter: 'https://twitter.com/abhishek_meena',
+      linkedin: '',
+      twitter: '',
     }
   },
   {
