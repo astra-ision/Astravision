@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --primary: #5648D1;
+  --primary-dark: #4537c9;
+  --primary-light: #7E6EE2;
+  
+  /* Secondary Colors */
+  --secondary: #00BFA6; /* Teal for innovation */
+  --secondary-dark: #00A693;
+  
+  /* Accent Colors */
+  --accent-blue: #2B7FFF; /* For AI/Tech elements */
+  --accent-gold: #FFD700; /* For Blockchain/Finance elements */
+  
+  /* Neutral Colors */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --gray-50: #F9FAFB;
+  --gray-100: #F3F4F6;
+  
+  /* Gradient Backgrounds */
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  --gradient-innovation: linear-gradient(135deg, var(--secondary) 0%, var(--accent-blue) 100%);
+}
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-r from-[#5648D1] via-[#7E6EE2] to-[#5648D1];
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .section-padding {
+    @apply py-24 px-4 sm:px-6 lg:px-8;
+  }
+
+  .heading-gradient {
+    @apply text-[#1a1a1a] font-bold leading-tight;
+  }
+
+  .btn-primary {
+    @apply bg-[#5648D1] text-white px-8 py-4 rounded-full 
+           hover:bg-[#4537c9] transition-all duration-300 
+           shadow-lg hover:shadow-xl transform hover:-translate-y-0.5
+           font-semibold text-lg;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-[#5648D1] text-[#5648D1] px-8 py-4 rounded-full 
+           hover:bg-[#5648D1] hover:text-white transition-all duration-300
+           transform hover:-translate-y-0.5 font-semibold text-lg;
+  }
+
+  .nav-link {
+    @apply text-gray-800 hover:text-[#5648D1] transition-colors duration-300 font-medium;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-6 text-[#1a1a1a] leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300
+           border border-gray-100 hover:border-[#5648D1]/20;
+  }
+
+  .input-field {
+    @apply w-full p-4 rounded-lg border border-gray-200 
+           focus:ring-2 focus:ring-[#5648D1] focus:border-[#5648D1]
+           transition-all duration-300 text-lg;
+  }
+
+  .feature-card {
+    @apply bg-white p-8 rounded-xl shadow-lg hover:shadow-xl 
+           transition-all duration-300 border border-gray-100
+           hover:border-[#5648D1]/20 hover:-translate-y-1;
+  }
+
+  .service-icon {
+    @apply text-5xl text-[#5648D1] mb-6;
+  }
+
+  .feature-list-item {
+    @apply flex items-center space-x-3 text-gray-700;
+  }
+
+  /* Typography Classes */
+  .text-content {
+    @apply text-lg leading-relaxed text-gray-600;
+  }
+
+  .heading-1 {
+    @apply text-4xl font-bold mb-6 text-gray-900;
+  }
+
+  .heading-2 {
+    @apply text-3xl font-bold mb-4 text-gray-900;
+  }
+
+  .heading-3 {
+    @apply text-2xl font-bold mb-3 text-gray-900;
+  }
+
+  .link-custom {
+    @apply text-[#5648D1] hover:underline cursor-pointer;
+  }
+
+  .list-custom {
+    @apply list-disc pl-6 space-y-2 text-gray-600;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5648D1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4537c9;
+}
+
+/* Better Container */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Better Spacing */
+.section-spacing {
+  @apply py-20 md:py-32;
+}
+
+/* Better Shadows */
+.shadow-custom {
+  @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+/* Better Focus States */
+.focus-custom {
+  @apply focus:outline-none focus:ring-2 focus:ring-[#5648D1] focus:ring-offset-2;
+}
+
+/* Rich Text Content */
+.rich-text {
+  @apply space-y-6 text-lg text-gray-600;
+}
+
+.rich-text h1 {
+  @apply text-4xl font-bold text-gray-900 mb-6;
+}
+
+.rich-text h2 {
+  @apply text-3xl font-bold text-gray-900 mb-4;
+}
+
+.rich-text h3 {
+  @apply text-2xl font-bold text-gray-900 mb-3;
+}
+
+.rich-text p {
+  @apply leading-relaxed;
+}
+
+.rich-text ul {
+  @apply list-disc pl-6 space-y-2;
+}
+
+.rich-text ol {
+  @apply list-decimal pl-6 space-y-2;
+}
+
+.rich-text a {
+  @apply text-[#5648D1] hover:underline;
+}
+
+.rich-text blockquote {
+  @apply border-l-4 border-[#5648D1] pl-4 italic;
+}
+/* *{
+  outline: 2px solid red;
+} */
