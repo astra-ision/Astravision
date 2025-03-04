@@ -18,7 +18,17 @@ export const metadata = {
     description: "Enterprise-grade AI, Blockchain & Cloud solutions for modern businesses",
     images: ['/og-image.jpg'],
   },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover",
 };
+
+export const viewport = {
+  themeColor: '#5648D1',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  viewportFit: 'cover',
+}
 
 export default function RootLayout({ children }) {
   return (

@@ -38,27 +38,27 @@ export default function Services() {
     ];
 
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-12 sm:py-20 bg-gray-50" id="services">
             <Container>
-                <div className="text-center mb-16">
+                <div className="text-center mb-10 sm:mb-16">
                     <h2 className="section-title">Our Services</h2>
                     <p className="section-subtitle">
                         End-to-end technology services to drive your business transformation
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
                     {services.map((service, index) => (
                         <motion.div
                             key={service.title}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                            className="bg-white p-5 sm:p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                         >
-                            <div className="text-[#5648D1] text-4xl mb-4">{service.icon}</div>
-                            <h3 className="text-xl font-bold mb-3 text-[#1a1a1a]">{service.title}</h3>
-                            <p className="text-gray-600">{service.description}</p>
+                            <div className="text-[#5648D1] text-3xl sm:text-4xl mb-3 sm:mb-4">{service.icon}</div>
+                            <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-[#1a1a1a]">{service.title}</h3>
+                            <p className="text-sm sm:text-base text-gray-600">{service.description}</p>
                         </motion.div>
                     ))}
                 </div>
