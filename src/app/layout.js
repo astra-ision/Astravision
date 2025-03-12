@@ -4,6 +4,7 @@ import ErrorBoundary from '@/components/ui/ErrorBoundary';
 import FloatingContact from '@/components/ui/FloatingContact';
 import CookieConsent from '@/components/ui/CookieConsent';
 import { Providers } from '@/components/Providers';
+import { AuthProvider } from '@/providers/AuthProvider';
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"] });
@@ -18,7 +19,6 @@ export const metadata = {
     description: "Enterprise-grade AI, Blockchain & Cloud solutions for modern businesses",
     images: ['/og-image.jpg'],
   },
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover",
 };
 
 export const viewport = {
@@ -34,14 +34,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={geist.className}>
-        <Providers>
-          <ErrorBoundary>
-            {children}
-            <FloatingContact />
-            <CookieConsent />
-            <Toaster position="bottom-right" />
-          </ErrorBoundary>
-        </Providers>
+        <AuthProvider>
+          <Providers>
+            <ErrorBoundary>
+              {children}
+              <FloatingContact />
+              <CookieConsent />
+              <Toaster position="bottom-right" />
+            </ErrorBoundary>
+          </Providers>
+        </AuthProvider>
       </body>
     </html>
   );

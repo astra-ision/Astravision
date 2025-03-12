@@ -1,3 +1,8 @@
+/* eslint-disable */
+/* stylelint-disable */
+/* postcss-import: ignore */
+/* VS Code CSS Language Server: ignore */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
