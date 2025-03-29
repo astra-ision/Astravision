@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter, usePathname } from 'next/navigation';
 import { navLinks, authRoutes } from '@/constants/navigation';
+import LanguageSelector from '@/components/ui/LanguageSelector';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -191,6 +192,10 @@ export default function Navbar() {
                 </svg>
               )}
             </button>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <LanguageSelector />
           </div>
         </div>
       </div>

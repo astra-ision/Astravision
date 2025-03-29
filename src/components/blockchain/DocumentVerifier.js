@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Button from '../ui/Button';
+import { Button } from '@/components/ui/Button';
 import LoadingSpinner from '../ui/LoadingSpinner';
 
 export default function DocumentVerifier({ account }) {

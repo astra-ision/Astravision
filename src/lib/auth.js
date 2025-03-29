@@ -115,37 +115,74 @@ class Auth {
 
   async verifyEmail(token) {
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/auth', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ action: 'verify-email', token }),
+      });
       
-      // For development - always verify
-      return { success: true };
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to verify email');
+      }
+      
+      return data;
     } catch (error) {
-      throw new Error(error.message || 'Email verification failed');
+      console.error('Verify email error:', error);
+      throw error;
     }
   }
 
   async forgotPassword(email) {
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/auth', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ action: 'reset-password', email }),
+      });
       
-      // In a real app, you'd trigger a password reset email
-      return { success: true };
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to send password reset link');
+      }
+      
+      return data;
     } catch (error) {
-      throw new Error(error.message || 'Password reset request failed');
+      console.error('Forgot password error:', error);
+      throw error;
     }
   }
 
   async resetPassword(token, newPassword) {
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/auth', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          action: 'confirm-reset-password', 
+          token, 
+          password: newPassword 
+        }),
+      });
       
-      // In a real app, you'd verify the token and update the password
-      return { success: true };
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to reset password');
+      }
+      
+      return data;
     } catch (error) {
-      throw new Error(error.message || 'Password reset failed');
+      console.error('Reset password error:', error);
+      throw error;
     }
   }
 

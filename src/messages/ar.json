@@ -1,0 +1,85 @@
+{
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "success": "تم بنجاح!",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "search": "بحث"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "تسجيل",
+    "logout": "تسجيل الخروج",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "newPassword": "كلمة المرور الجديدة",
+    "rememberMe": "تذكرني",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+    "signUp": "إنشاء حساب",
+    "signIn": "تسجيل الدخول",
+    "verifyEmail": "تحقق من البريد الإلكتروني",
+    "checkEmail": "تحقق من بريدك الإلكتروني",
+    "emailVerificationSent": "لقد أرسلنا رابط التحقق إلى بريدك الإلكتروني.",
+    "passwordResetSent": "لقد أرسلنا رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني.",
+    "enterNewPassword": "الرجاء إدخال كلمة المرور الجديدة أدناه.",
+    "passwordResetSuccess": "تم إعادة تعيين كلمة المرور بنجاح!",
+    "verificationSuccess": "تم التحقق من البريد الإلكتروني بنجاح!",
+    "loginSuccess": "تم تسجيل الدخول بنجاح",
+    "loginFailed": "فشل تسجيل الدخول"
+  },
+  "dashboard": {
+    "overview": "نظرة عامة",
+    "users": "المستخدمين",
+    "settings": "الإعدادات",
+    "profile": "الملف الشخصي",
+    "analytics": "التحليلات",
+    "reports": "التقارير"
+  },
+  "crm": {
+    "title": "إدارة علاقات العملاء",
+    "clients": "العملاء",
+    "contacts": "جهات الاتصال",
+    "deals": "الصفقات",
+    "pipeline": "خط الأنابيب"
+  },
+  "erp": {
+    "title": "تخطيط موارد المؤسسة",
+    "inventory": "المخزون",
+    "orders": "الطلبات",
+    "products": "المنتجات",
+    "finance": "المالية",
+    "supplyChain": "سلسلة التوريد"
+  },
+  "hrms": {
+    "title": "نظام إدارة الموارد البشرية",
+    "employees": "الموظفين",
+    "recruitment": "التوظيف",
+    "performance": "الأداء",
+    "leave": "إدارة الإجازات"
+  },
+  "ai": {
+    "title": "حلول الذكاء الاصطناعي",
+    "chatbot": "روبوت المحادثة",
+    "imageRecognition": "التعرف على الصور",
+    "documentAnalysis": "تحليل المستندات",
+    "predictions": "التنبؤات",
+    "modelTraining": "تدريب النموذج"
+  },
+  "blockchain": {
+    "title": "بلوكتشين",
+    "wallet": "المحفظة",
+    "transactions": "المعاملات",
+    "smartContracts": "العقود الذكية",
+    "nft": "سوق NFT",
+    "defi": "لوحة تحكم DeFi",
+    "documentVerification": "التحقق من المستندات"
+  }
+} 

@@ -1,0 +1,85 @@
+{
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "एक त्रुटि हुई",
+    "success": "सफलता!",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "view": "देखें",
+    "search": "खोज"
+  },
+  "auth": {
+    "login": "लॉग इन करें",
+    "register": "रजिस्टर करें",
+    "logout": "लॉग आउट",
+    "email": "ईमेल पता",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "resetPassword": "पासवर्ड रीसेट करें",
+    "newPassword": "नया पासवर्ड",
+    "rememberMe": "मुझे याद रखें",
+    "dontHaveAccount": "खाता नहीं है?",
+    "alreadyHaveAccount": "पहले से ही खाता है?",
+    "signUp": "साइन अप करें",
+    "signIn": "साइन इन करें",
+    "verifyEmail": "ईमेल सत्यापित करें",
+    "checkEmail": "अपना ईमेल जांचें",
+    "emailVerificationSent": "हमने आपके ईमेल पते पर एक सत्यापन लिंक भेजा है।",
+    "passwordResetSent": "हमने आपके ईमेल पते पर एक पासवर्ड रीसेट लिंक भेजा है।",
+    "enterNewPassword": "कृपया नीचे अपना नया पासवर्ड दर्ज करें।",
+    "passwordResetSuccess": "पासवर्ड सफलतापूर्वक रीसेट किया गया!",
+    "verificationSuccess": "ईमेल सफलतापूर्वक सत्यापित किया गया!",
+    "loginSuccess": "लॉगिन सफल",
+    "loginFailed": "लॉगिन विफल"
+  },
+  "dashboard": {
+    "overview": "अवलोकन",
+    "users": "उपयोगकर्ता",
+    "settings": "सेटिंग्स",
+    "profile": "प्रोफाइल",
+    "analytics": "विश्लेषिकी",
+    "reports": "रिपोर्ट"
+  },
+  "crm": {
+    "title": "ग्राहक संबंध प्रबंधन",
+    "clients": "ग्राहक",
+    "contacts": "संपर्क",
+    "deals": "सौदे",
+    "pipeline": "पाइपलाइन"
+  },
+  "erp": {
+    "title": "एंटरप्राइज़ रिसोर्स प्लानिंग",
+    "inventory": "इन्वेंट्री",
+    "orders": "आदेश",
+    "products": "उत्पाद",
+    "finance": "वित्त",
+    "supplyChain": "आपूर्ति श्रृंखला"
+  },
+  "hrms": {
+    "title": "मानव संसाधन प्रबंधन प्रणाली",
+    "employees": "कर्मचारी",
+    "recruitment": "भर्ती",
+    "performance": "प्रदर्शन",
+    "leave": "अवकाश प्रबंधन"
+  },
+  "ai": {
+    "title": "AI समाधान",
+    "chatbot": "चैटबॉट",
+    "imageRecognition": "छवि पहचान",
+    "documentAnalysis": "दस्तावेज़ विश्लेषण",
+    "predictions": "भविष्यवाणी",
+    "modelTraining": "मॉडल प्रशिक्षण"
+  },
+  "blockchain": {
+    "title": "ब्लॉकचेन",
+    "wallet": "वॉलेट",
+    "transactions": "लेनदेन",
+    "smartContracts": "स्मार्ट कॉन्ट्रैक्ट्स",
+    "nft": "NFT मार्केटप्लेस",
+    "defi": "DeFi डैशबोर्ड",
+    "documentVerification": "दस्तावेज़ सत्यापन"
+  }
+} 

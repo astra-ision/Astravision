@@ -1,0 +1,85 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search"
+  },
+  "auth": {
+    "login": "Log In",
+    "register": "Register",
+    "logout": "Log Out",
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "newPassword": "New Password",
+    "rememberMe": "Remember Me",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "signUp": "Sign Up",
+    "signIn": "Sign In",
+    "verifyEmail": "Verify Email",
+    "checkEmail": "Check your email",
+    "emailVerificationSent": "We've sent a verification link to your email address.",
+    "passwordResetSent": "We've sent a password reset link to your email address.",
+    "enterNewPassword": "Please enter your new password below.",
+    "passwordResetSuccess": "Password reset successfully!",
+    "verificationSuccess": "Email verified successfully!",
+    "loginSuccess": "Login successful",
+    "loginFailed": "Login failed"
+  },
+  "dashboard": {
+    "overview": "Overview",
+    "users": "Users",
+    "settings": "Settings",
+    "profile": "Profile",
+    "analytics": "Analytics",
+    "reports": "Reports"
+  },
+  "crm": {
+    "title": "CRM",
+    "clients": "Clients",
+    "contacts": "Contacts",
+    "deals": "Deals",
+    "pipeline": "Pipeline"
+  },
+  "erp": {
+    "title": "ERP",
+    "inventory": "Inventory",
+    "orders": "Orders",
+    "products": "Products",
+    "finance": "Finance",
+    "supplyChain": "Supply Chain"
+  },
+  "hrms": {
+    "title": "HRMS",
+    "employees": "Employees",
+    "recruitment": "Recruitment",
+    "performance": "Performance",
+    "leave": "Leave Management"
+  },
+  "ai": {
+    "title": "AI Solutions",
+    "chatbot": "Chatbot",
+    "imageRecognition": "Image Recognition",
+    "documentAnalysis": "Document Analysis",
+    "predictions": "Predictions",
+    "modelTraining": "Model Training"
+  },
+  "blockchain": {
+    "title": "Blockchain",
+    "wallet": "Wallet",
+    "transactions": "Transactions",
+    "smartContracts": "Smart Contracts",
+    "nft": "NFT Marketplace",
+    "defi": "DeFi Dashboard",
+    "documentVerification": "Document Verification"
+  }
+} 
